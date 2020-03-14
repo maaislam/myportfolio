@@ -1,0 +1,58 @@
+
+
+*, 
+*::after,
+*::before{
+
+    margin: 0;
+    padding: 0;
+    box-sizing:inherit;
+    
+}
+
+html{
+
+
+    font-size: 62.5%;/* 1 rem = 10px but browser default size is 16 px so 10/16 = 62.5*/
+
+    @include respond(tab-land){/*1 rem = 9px so 9/16px = 56.25*/
+        font-size: 56.25%;
+    }
+
+    
+    @include respond(tab-port){
+        font-size: 53%;          /*1 rem = 8.5px so 8.5/16px = 53*/
+    }
+    
+    @include respond(phone){/*1 rem = 8px so 8/16px = 50*/
+        font-size: 50%;
+    }
+    @include respond(phone-small){/*1 rem = 7.5px so 7.5/16px = 47*/
+        font-size: 47%;
+    }
+   
+  
+    @include respond(big-desktop){
+        font-size: 75%;              /*1 rem = 12px so 12/16px = 75*/
+    }
+
+
+   
+}
+
+
+
+body {
+
+   
+    font-family: 'Montserrat', serif ;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777777;
+    padding: 0rem;
+    box-sizing: border-box;
+    position: relative;
+    
+    
+}

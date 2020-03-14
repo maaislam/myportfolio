@@ -1,0 +1,215 @@
+
+
+.section__testimonials{
+   
+    
+   
+    
+    padding: 8rem 30rem;
+        @include respond(tab-land){padding: 5rem 12rem;}
+        @include respond(phone){padding: 5rem 6rem;}
+            
+            &-text{
+                padding-bottom: 8rem;
+
+               
+
+            }
+
+            & h2{
+               
+                color:black;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                padding-bottom: 1.5rem;
+                text-align: center;
+               
+            }
+
+        & p{
+            padding-top: 3rem;
+
+
+            @include respond(tab-port){
+                    font-size: 1.5rem;
+                /**************f*********************/
+                }
+            @include respond(phone){
+                    font-size: 2rem;
+                    letter-spacing: 1px;
+                    line-height: 3rem;
+                /**************f*********************/
+                }
+
+        }
+
+
+        
+        &-container{
+            
+            width: 100%;
+         
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1rem;
+            box-shadow:
+            0 0px 26.9px -18px rgba(0, 0, 0, 0.049),
+            0 0px 31.5px -18px rgba(0, 0, 0, 0.076),
+            0 0.1px 33.5px -18px rgba(0, 0, 0, 0.097),
+            0 0.5px 36px -18px rgba(0, 0, 0, 0.124),
+            0 2.2px 42.2px -18px rgba(0, 0, 0, 0.175),
+            0 31px 80px -18px rgba(0, 0, 0, 0.32);
+                            
+
+            .user-image{
+                
+                z-index: 10;
+                clip-path: circle(91.7% at 18% 39%);
+
+
+                        @include respond(tab-land){clip-path: circle(91.7% at 18% 39%);} 
+                        @include respond(tab-port){clip-path: none;} 
+
+                & img{
+                    transform: scale(1.8) translateX(60px);
+                    width: 100%;
+                    @include respond(tab-land){
+                        transform: scale(1.4);
+                      }
+                }
+
+            }
+
+        
+
+            .section__testimonials-container-reviews figure{
+                
+                
+              
+                z-index: -10;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                flex: 1 1 auto;
+
+                padding-left: 3rem;
+                padding-top: 5rem;
+
+                @include respond(tab-land){
+                 
+                    padding-top: 2rem;
+                  padding-left: 2rem;
+                }
+                   
+                            @include respond(tab-port){
+                                
+                               padding-top: 7rem;
+                                align-items: center;
+                                padding-left: 5rem;
+                                padding-right: 5rem;
+                                        }
+
+                                        
+                   @include respond(phone){
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    
+                        
+                   }
+
+            }
+            
+                & blockquote{
+                    width: 42%;
+                    z-index: -10;
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                    letter-spacing: 1px;
+                    color: black;
+                    //margin-right: 45rem;
+                    
+                    text-align: justify;
+                    padding-bottom: 6rem;
+                    padding-top: 5rem;
+                        & span{
+                            
+                            font-size:2.5rem;
+                                line-height: 1.5rem;
+                        }
+                    
+                    @include respond(tab-land){
+                        font-size: 1.5rem;
+                        
+                        padding-bottom: 4rem;
+                        padding-top: 3rem;
+                    }
+
+                    @include respond(tab-port){
+                        font-size: 1.7rem;
+                        width: 100%;
+                        padding-top: 2rem;
+                        padding-bottom: 4rem;
+                    }
+
+                    @include respond(phone){
+                        font-size: 2rem;
+                        width: 90%;
+                        line-height: 2.5rem;
+                        padding-top: 1rem;
+                        padding-bottom: 2rem;
+                    
+                    }
+                    
+                    }
+                    
+                }
+                & figcaption{
+                    padding-top: 0rem;
+                    width: 40%;
+                    text-align: center;
+                    font-size: 1.0rem;
+                    padding-bottom: 6rem;
+                    @include respond(tab-land){
+                        padding-bottom: 4rem;
+                      }
+                    @include respond(tab-port){
+                        padding-bottom: 5rem;
+                        font-size: 1.5rem;
+                    }
+
+                    @include respond(phone){
+                        padding-bottom: 2rem;
+                        font-size: 1.3rem;
+                    }
+                }
+                
+                & img{ 
+                    
+                    transform: translateX(110px);
+                    width: 20%;
+
+                    @include respond(tab-land){
+                        transform: translateX(80px);
+                        width: 25%;
+                    }
+                  
+                    @include respond(tab-port){
+                        transform: translateX(0);
+                       
+                        width: 50%;
+                    }
+
+                    @include respond(phone){
+                        
+                       
+                    }
+                    
+                }
+            
+
+
+        
+    }
+
+
+    

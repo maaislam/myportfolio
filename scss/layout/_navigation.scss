@@ -1,0 +1,92 @@
+
+
+.nav{
+    
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    justify-content:space-between;
+    top: 0%;
+    left: 0%;
+    z-index: 500;
+    align-items: center;
+    padding: 1rem 2rem 0.5rem 3rem;
+
+    /*Navigation background*/
+    background-color: rgba(187, 187, 187, 0.219);
+            @include respond(tab-land){
+                background-color: rgba(255, 255, 255, 0);
+                
+            
+            }
+
+    transition: all 0.5s 0s ease-in-out;
+   
+    &__link-container{
+
+       
+        @include respond(tab-land){display: none;}
+    }
+
+    &__link-container a{
+        
+        padding: 0 1rem;
+       text-decoration: none;
+       text-transform: uppercase;
+       font-size: 1.4rem;
+       color: white;
+       transition: all 0.5s 0s ease-in-out;
+    }
+
+
+    &__logo-container{
+        @include respond(tab-land){padding-top: 1.0rem;}
+    }
+
+    &__logo-container i{
+
+       font-size: 4.0rem;
+       color: white;
+       @include phoenix-color;
+       transition: all 0.5s 0s ease-in-out;
+
+       padding-bottom: 2rem;
+       
+            & span{
+                font-family: 'Dancing Script', cursive;
+                font-size: 4.0rem;
+                transition: all 0.5s 0s ease-in-out;
+            }
+    }
+}
+
+
+
+
+.nav-link{
+
+    background-color: rgb(46, 46, 46);
+    transition: all 0.5s 0s ease-in-out;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    & a{
+
+        font-size: 1.2rem;
+        transition: all 0.5s 0s ease-in-out;
+    }
+    
+}
+
+.nav-logo i{
+    padding-top: 1.5rem;
+    font-size: 3.5rem;
+    transition: all 0.5s 0s ease-in-out;
+    & span{
+        
+        font-size: 3rem;
+        transition: all 0.5s 0s ease-in-out;
+        
+    }
+}

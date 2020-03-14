@@ -1,0 +1,166 @@
+   /*Simple Contact Form*/
+
+   .contact-form{
+
+    background-image: url(/images/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10rem;
+    //flex-wrap: nowrap;
+    width: 100%;
+    @include primary-padding;
+    justify-content: space-between;
+    
+        @include respond(tab-land){
+
+            padding: 8rem 20rem;
+        }
+                @include respond(phone){
+
+                    padding: 8rem 6rem;
+                }
+
+        
+  
+
+    &__text{
+
+       & h2{
+        display: inline;
+        color:black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 1.5rem;
+        font-weight: 600;
+            @include respond(tab-port){
+                
+                font-size: 2.8rem ;
+                line-height: 2.5rem;
+            }
+                @include respond(phone){
+                    
+                    font-size: 3rem ;
+                    line-height: 2.5rem;
+                }
+
+    }
+
+    & p{
+        padding-top: 3rem;
+ 
+ 
+        @include respond(tab-port){
+             
+         font-size: 1.5rem ;
+         line-height: 2.5rem;
+         }
+        @include respond(phone){
+             
+         font-size: 2rem ;
+         line-height: 3rem;
+         }
+ 
+    }
+
+    }
+
+    &__details{
+
+        position: relative;
+    }
+}
+
+  
+
+                .form__input{
+                    
+                    font-size: 1.3rem;
+                    font-family: inherit;
+                    padding: 1.5rem 2rem;
+                    border-radius: 2px;
+                    background-color: rgb(255, 255, 255);
+                    border: none;
+                    border-bottom: 3px solid rgba(71, 71, 71, 0.534);
+                    display: block;
+                    box-shadow: none;
+                    width: 100%;
+                    transition: all 0.5s;
+                    box-shadow:
+                    0 0px 26.9px -18px rgba(0, 0, 0, 0.049),
+                    0 0px 31.5px -18px rgba(0, 0, 0, 0.076),
+                    0 0.1px 33.5px -18px rgba(0, 0, 0, 0.097),
+                    0 0.5px 36px -18px rgba(0, 0, 0, 0.124),
+                    0 2.2px 42.2px -18px rgba(0, 0, 0, 0.175),
+                    0 31px 80px -18px rgba(0, 0, 0, 0.32);
+                }
+
+                    .form__input:focus{
+
+                        outline: none;
+                        border-bottom: 3px solid rgba(40, 180, 131, 0.8);
+                        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+                       
+                    }
+            
+                   
+                    .form__input:focus:invalid{
+                        
+                     //sborder-bottom: 3px solid orangered;
+                        outline: none;
+                        
+                    }
+
+                    .form__input:invalid{
+                        
+                        outline: none;
+                    }
+            
+                    .form__input::-moz-input-placeholder{
+            
+                        color: rgb(187, 173, 45);
+            
+                    }
+            
+
+               
+
+                .form__label{
+
+                    font-size: 1.3rem;
+                    
+                    margin-left: 2rem;
+                    margin-top: 0.7rem;
+                    -webkit-transition: all 0.5s;
+                    transition: all 0.5s;
+                    display: block;
+
+                }
+
+                .form__input:placeholder-shown + .form__label{
+
+                    opacity: 0;
+                    visibility: hidden;
+                    -webkit-transform: translateY(-4rem);
+                            transform: translateY(-4rem);
+                }
+
+
+                .main__submit-button{
+                    position: relative;
+                    display: inline-block;
+                    margin-top: 2rem;
+                }
+.submit{
+
+font-size: 1.8rem;
+text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 5rem;
+    transition: all .1s;
+    border: none;
+    cursor: pointer;
+}

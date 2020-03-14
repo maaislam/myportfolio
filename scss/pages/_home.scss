@@ -1,0 +1,565 @@
+
+.section__mysummary{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 5rem;
+    //@include primary-padding;
+    padding: 15rem 23rem;
+    background-image: url(/images/test.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right;
+    position: relative;
+    overflow: hidden;
+    @include respond(tab-port){
+        @include primary-tab-padding;
+    
+    }
+    
+    @include respond(phone){
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1rem;
+        padding: 5rem 3rem;
+    }
+
+    &-text{
+        
+        @include respond(tab-port){
+            text-align: center;
+            padding: 3rem 5rem;
+            
+        }
+                @include respond(phone){
+                    
+                    padding: 3rem;
+                    
+                }
+
+    }
+
+    &-text>* {
+       
+        color: black;
+        padding-bottom: 3.5rem;
+        z-index: 1;
+        @include respond(tab-port){
+            text-align: center;
+            padding: 3rem 2rem;
+          
+        }
+                @include respond(phone){
+                    
+                    padding: 3rem 0;
+                
+                }
+        
+    }
+
+    &-text h2{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 2rem;
+        //margin-right: 30rem;
+        @include respond(phone){
+                    
+           font-size: 3rem;
+        
+        }
+        
+    }
+
+
+
+    &-text h3{
+        padding-top: 2rem;
+        //color:rgb(223, 87, 24);
+        @include phoenix-color;
+        @include respond(phone){
+            
+            font-size: 2.5rem ;
+          
+        }
+    }
+
+    &-text p{
+
+        @include respond(tab-port){
+            
+            
+            line-height: 2.5rem;
+        }
+
+            @include respond(phone){
+   
+                
+                @include phone-font-system;
+                
+    }
+            
+            
+    }
+
+    &-text a{
+       
+        position: relative;
+        z-index: 1;
+    }
+
+    &-image img{
+      
+
+        width: 100%;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+        @include respond(phone){
+            width: 90%;
+            padding-left: 6rem;
+        }
+
+    }
+}
+
+
+/*Style for My work Section/ section 2*/
+
+.section__mywork{
+    
+
+    background-color:#f1f4f8;
+    @include primary-padding;
+        @include respond(tab-port){
+                
+            @include primary-tab-padding;
+        }
+        @include respond(phone){
+                
+            padding: 5rem 7rem 5rem 7rem;
+        }
+    &-text{
+        padding-bottom: 8rem;
+        @include respond(tab-port){
+                
+            padding-bottom: 5rem;
+        }
+
+    }
+
+    & h2{
+        display: inline;
+        color:black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 1.5rem;
+        
+        @include respond(tab-port){
+            
+            font-size: 3.5rem ;
+            line-height: 2.5rem;
+        }
+    }
+
+   & p{
+       padding-top: 3rem;
+
+
+       @include respond(tab-port){
+            
+        font-size: 1.7rem ;
+        line-height: 2.5rem;
+        }
+        
+
+       @include respond(phone){
+            
+        @include phone-font-system;
+        }
+
+
+   }
+}
+
+
+
+.mywork{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding-top: 1.5rem;
+
+    
+        @include respond(tab-land){
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));    
+            
+        }
+       
+        @include respond(phone){
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));    
+            
+        }
+ 
+    & img{
+      
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: 100%;
+        height: auto;
+
+    }
+
+    & p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        text-align: center;
+            @include respond(phone){
+                @include phone-font-system;
+            }
+    }
+
+    & ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+        list-style: none;
+        text-align: center;
+        font-size: 3.5rem;
+        //color: black;
+
+        & li:first-child{
+            color: rgb(241, 101, 41);
+        }
+        & li:nth-child(2){
+            color: rgb(41, 101, 241); 
+        }
+        & li:last-child{
+            color: rgba(240, 218, 79,1);
+        }
+    }
+
+
+    .mywork__card{
+
+
+        //border: 1px solid rgba(0, 0, 0, 0.2);
+       // padding: 0.5rem;
+      
+        padding-top: 2rem;
+        background-color: white;
+        box-shadow:
+            0 3.7px 1px rgba(0, 0, 0, 0.07),
+            0 6.9px 3.3px rgba(0, 0, 0, 0.062),
+            0 9.6px 8.2px rgba(0, 0, 0, 0.055),
+            0 12.4px 18.6px rgba(0, 0, 0, 0.049),
+            0 15.4px 39.4px rgba(0, 0, 0, 0.043),
+            0 19.1px 62.5px rgba(0, 0, 0, 0.037),
+            0 24px 80px rgba(0, 0, 0, 0.027);
+     
+    
+    & p, ul{
+    
+        padding-bottom: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        
+        }
+    }
+    
+    }
+
+
+    /*Style for my skills section*/
+
+    .section__myskill {
+        
+    background-color:#f1f4f8;
+    @include primary-padding;
+        
+        @include respond(tab-port){
+                
+            @include primary-tab-padding;
+        }
+            @include respond(phone){
+                    
+                padding: 5rem 7rem 5rem 7rem;
+            }
+    &-text{
+        padding-bottom: 8rem;
+        
+        @include respond(tab-port){
+                
+            padding-bottom: 5rem;
+        }
+
+    
+
+    & h2{
+        display: inline;
+        color:black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 1.5rem;
+        font-weight: 600;
+            @include respond(tab-port){
+                
+                font-size: 2.8rem ;
+                line-height: 2.5rem;
+            }
+                @include respond(phone){
+                    
+                    font-size: 3rem ;
+                    line-height: 2.5rem;
+                }
+
+    }
+
+   & p{
+       padding-top: 3rem;
+       margin-right: -3rem;
+
+
+       @include respond(tab-port){
+            
+        font-size: 1.5rem ;
+        line-height: 2.5rem;
+        }
+       @include respond(phone){
+            
+            @include phone-font-system;
+      
+        }
+
+   }
+}
+    }
+
+    .myskill{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
+        gap: 10rem;
+        
+        & h4{
+            color: black;
+            font-size: 1.5rem;
+            
+            line-height: normal;
+            
+        }
+    }
+
+    .myskill__card{
+        padding-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr;
+        gap: 5rem;
+        align-items: center;
+        justify-items: left;
+        box-sizing: border-box;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        margin-right: -3rem;
+        @include respond(tab-port){
+            & h4{
+                font-size: 2.5rem;
+            }
+        }
+
+        @include respond(phone){
+            padding-bottom: 2rem;
+            padding-top: 0;
+            
+            border-right: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                & h4{
+                    font-size: 2.5rem;
+                }
+     
+        }
+
+
+        & i{
+            color: white;
+            font-size: 4rem;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            border-radius: 50%;
+            box-shadow:
+                0 0.1px 6.1px rgba(0, 0, 0, 0.012),
+                0 4.8px 18.4px rgba(0, 0, 0, 0.057),
+                0 31px 80px rgba(0, 0, 0, 0.07);
+            
+        }
+    
+
+                &:first-child i{
+
+                        background-color: $html5-color;      
+                    }
+                &:nth-child(2) i{
+
+                        background-color: $css3-color;      
+                    }
+                &:nth-child(3) i{
+                        padding: 1.5rem 1.7rem;
+                        font-size: 3.5rem;
+                        background-color: $js-color;  
+
+                    }
+                &:nth-child(4) i{
+                        padding: 1.7rem 1.4rem;
+                        font-size: 3.5rem;
+                        background-color: $sass-color;  
+
+                    }
+                &:nth-child(5) i{
+                        padding: 1.8rem 2.2rem;
+                        font-size: 3.5rem;
+                        background-color: $jquery-color;  
+
+                    }
+                &:nth-child(6) i{
+                        padding: 1.7rem 2rem;
+                        font-size: 3.5rem;
+                        background-color: $bootstrap4-color;  
+
+                    }
+                &:nth-child(7) i{
+                        padding: 2rem 2rem;
+                        font-size: 3.5rem;
+                        background-color: $wordpress-color;  
+
+                    }
+                &:nth-child(8) i{
+                        padding: 2rem 2rem;
+                        font-size: 3.5rem;
+                        background-color: $github-color;  
+
+                    }
+
+
+                &:nth-child(1) h4{
+
+                    text-align: left;
+                }
+                &:nth-child(2) h4{
+
+                    text-align: left;
+                }
+
+      
+    }
+
+
+/**************Why work with me Section Style*********************/
+
+
+
+.section__features{
+
+    background-color:white;
+    @include primary-padding;
+       
+        @include respond(tab-port){
+                
+            @include primary-tab-padding;
+        }
+            @include respond(phone){
+                    
+                padding: 5rem 7rem 5rem 7rem;
+            }
+    &-text{
+        padding-bottom: 8rem;
+        
+        @include respond(tab-port){
+                
+            padding-bottom: 5rem;
+        }
+
+        & h2{
+            display: inline;
+            color:black;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 1.5rem;
+            font-weight: 600;
+                @include respond(tab-port){
+                    
+                    font-size: 2.8rem ;
+                    line-height: 2.5rem;
+                }
+                    @include respond(phone){
+                        
+                        font-size: 3rem ;
+                        line-height: 2.5rem;
+                    }
+    
+        }
+    
+       & p{
+           padding-top: 3rem;
+           margin-right: -3rem;
+    
+    
+           @include respond(tab-port){
+                
+            font-size: 1.5rem ;
+            line-height: 2.5rem;
+            }
+           @include respond(phone){
+                
+                @include phone-font-system;
+          
+            }
+    
+       }
+
+       
+}
+
+&-cards{
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+   gap: 4rem;
+                .card{
+            box-shadow: 0 3.7px 1px rgba(0, 0, 0, 0.07),
+            0 6.9px 3.3px rgba(0, 0, 0, 0.062),
+            0 9.6px 8.2px rgba(0, 0, 0, 0.055),
+            0 12.4px 18.6px rgba(0, 0, 0, 0.049),
+            0 15.4px 39.4px rgba(0, 0, 0, 0.043),
+            0 19.1px 62.5px rgba(0, 0, 0, 0.037),
+            0 24px 80px rgba(0, 0, 0, 0.027);
+            padding-top: 2rem ;
+            }
+
+
+    .card >*{
+
+        padding: 0 1rem 2rem 2rem ;
+        
+    }
+
+    
+
+    & h3{
+
+        color: black;
+        text-align: center;
+    }
+    .icon{
+       
+        font-size:2rem;
+        text-align: center;
+        color: rgb(41, 101, 241); 
+    }
+    & p{
+       
+        font-size:1.3rem;
+        text-align: center;
+        
+    }
+
+    
+    
+
+   }
+
+
+}
