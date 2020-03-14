@@ -65,8 +65,13 @@
 
 @mixin phoenix-color {
     -webkit-text-fill-color: transparent;
-       background: linear-gradient(to left, #f5af19, #f12711);
-       background-clip: text;
+        
+        background: -moz-linear-gradient(to left, #f5af19, #f12711);
+        background: -webkit-linear-gradient(to left, #f5af19, #f12711);
+        background: -o-linear-gradient(right, #f5af19, #f12711);  
+        background: linear-gradient(to left, #f5af19, #f12711);
+                -webkit-background-clip: text;
+                background-clip: text;
 }
 
 

@@ -529,7 +529,9 @@
             padding-top: 2rem ;
             }
 
-
+            .card{
+                padding: 2rem;
+            }
     .card >*{
 
         padding: 0 1rem 2rem 2rem ;
@@ -542,6 +544,7 @@
 
         color: black;
         text-align: center;
+        
     }
     .icon{
        
@@ -553,7 +556,11 @@
        
         font-size:1.3rem;
         text-align: center;
-        
+        @include respond(phone){
+                font-size: 1.8rem;
+                    letter-spacing: 1px;
+                    line-height: 3rem;
+            }
     }
 
     

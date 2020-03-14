@@ -73,10 +73,7 @@
 
 
     &-text h1 span {
-        -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(to left, #f5af19, #f12711);
-                background: linear-gradient(to left, #f5af19, #f12711);
-                background-clip: text;
+        @include phoenix-color;
     }
 
     &-text h4 {
