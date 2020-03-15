@@ -491,8 +491,8 @@ h4 p {
 
 @media (max-width: 50em) {
   .contact-form__text p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -612,7 +612,8 @@ h4 p {
 
 @media (max-width: 50em) {
   .section__testimonials p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
     /**************f*********************/
   }
 }
@@ -1306,8 +1307,8 @@ h4 p {
 
 @media (max-width: 50em) {
   .section__mywork p {
-    font-size: 1.7rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -1455,7 +1456,6 @@ h4 p {
 
 .section__myskill-text p {
   padding-top: 3rem;
-  margin-right: -3rem;
 }
 
 @media (max-width: 50em) {
