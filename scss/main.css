@@ -991,8 +991,15 @@ h4 p {
   width: 40%;
 }
 
+@media (max-width: 75em) {
+  .header__landing-text blockquote {
+    width: 70%;
+  }
+}
+
 @media (max-width: 37.5em) {
   .header__landing-text blockquote {
+    width: 100%;
     font-size: 2rem;
     line-height: 4rem;
     font-weight: 400;
