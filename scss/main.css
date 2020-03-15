@@ -1354,6 +1354,13 @@ h4 p {
   text-align: center;
 }
 
+@media (max-width: 50em) {
+  .mywork p {
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+}
+
 @media (max-width: 37.5em) {
   .mywork p {
     font-size: 2rem;
@@ -1453,8 +1460,8 @@ h4 p {
 
 @media (max-width: 50em) {
   .section__myskill-text p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -1633,14 +1640,8 @@ h4 p {
 
 @media (max-width: 50em) {
   .section__features-text p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .section__features-text p {
-    font-size: 2rem;
+    font-size: 2.0rem;
+    letter-spacing: 1px;
     line-height: 3rem;
   }
 }
@@ -1681,6 +1682,14 @@ h4 p {
 .section__features-cards p {
   font-size: 1.3rem;
   text-align: center;
+}
+
+@media (max-width: 50em) {
+  .section__features-cards p {
+    font-size: 2.0rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+  }
 }
 
 @media (max-width: 37.5em) {
