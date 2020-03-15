@@ -28,21 +28,24 @@
         left: 20%;
         transform: translate(-20%, -70%);
                      @include respond(phone){
-                       margin-right: -6rem;
-                      
-                       left: 30%;
-                       transform: translate(-30%, -70%);
-    }           
+                      width: 100%;
+                      padding:1.5rem;
+                        
+                       left: 50%;
+                       transform: translate(-50%, -70%);
+                       text-align: center;
+                                    }           
     }
 
 
-
-
+    
+   
 
     &-text h1 {
        
         text-transform: uppercase;
         font-weight: 600;
+        padding-bottom: 2rem;
     }
                 /*this is done to style auto tuped text*/
                 #typed{
@@ -50,13 +53,9 @@
                     text-transform: uppercase;
                     font-weight: 600;
                     color: white;
+                    
                 }
-                  /*&-text h2 {
-
-                        padding-bottom: 5.5rem;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                    }*/
+                  
                 
     &-text blockquote {
         padding-top: 1rem;
@@ -66,8 +65,10 @@
         font-size: 1.3rem;
         color: white;
          @include respond(phone){
-             font-size: 1.5rem;
-             line-height: 2.5rem;
+             font-size: 2rem;
+             line-height: 4rem;
+             font-weight: 400;
+             padding: 2rem 1.5rem 0rem 1.5rem;
          }
     }
 
