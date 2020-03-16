@@ -269,6 +269,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   /* 1 rem = 10px but browser default size is 16 px so 10/16 = 62.5*/
 }
