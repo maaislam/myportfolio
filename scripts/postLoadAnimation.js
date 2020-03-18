@@ -1786,7 +1786,7 @@ AOS.init({
 /*********Code for smooth scrolling*******/
 
 var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 500,
+    speed: 600,
     easing: 'easeInOutCubic'
 });
 
