@@ -10,6 +10,7 @@
 /*Padding for main container in desktop screen size*/
 /*Padding for main container in tablet in potrait mode*/
 /*****PHONE Font System*****/
+/*****tablet Font System*****/
 /*my skill item colors*/
 @-webkit-keyframes bounce-in-left {
   0% {
@@ -1911,6 +1912,7 @@ h4 p {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 4rem;
+    padding-left: 0;
   }
 }
 
@@ -1943,7 +1945,7 @@ h4 p {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 75em) {
   .overview__text p {
     font-size: 2rem;
     line-height: 3rem;
@@ -1958,7 +1960,7 @@ h4 p {
 
 .overview__image img {
   background-color: white;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -1978,17 +1980,23 @@ h4 p {
   }
 }
 
+@media (max-width: 37.5em) {
+  .proj_btn {
+    padding-right: 0rem;
+  }
+}
+
 .proj_btn .button2 {
   margin-left: 3rem;
 }
 
 .proj_btn__style {
   padding-right: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#e43a15), color-stop(51%, #e65245), to(#e43a15));
   background-image: linear-gradient(to right, #e43a15 0%, #e65245 51%, #e43a15 100%);
-  padding: 0.5rem 3rem 1rem 3rem;
+  padding: 0.5rem 2rem 1rem 2rem;
   display: inline-block;
   text-decoration: none;
   -webkit-transition: all .1s;
@@ -2043,7 +2051,7 @@ h4 p {
 
 @media (max-width: 37.5em) {
   .tech-used {
-    padding: 6rem;
+    padding: 4rem;
   }
 }
 
@@ -2125,7 +2133,7 @@ h4 p {
   border-left: 3px solid #EF3F49;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 75em) {
   .tech-used__image ul {
     font-size: 2rem;
     line-height: 3rem;
@@ -2141,9 +2149,15 @@ h4 p {
   padding-top: 5rem;
 }
 
+@media (max-width: 37.5em) {
+  .proj_btn-back {
+    text-align: center;
+  }
+}
+
 .proj_btn-back__style {
   padding-right: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#e43a15), color-stop(51%, #e65245), to(#e43a15));
   background-image: linear-gradient(to right, #e43a15 0%, #e65245 51%, #e43a15 100%);
@@ -2153,6 +2167,12 @@ h4 p {
   -webkit-transition: all .1s;
   transition: all .1s;
   border-radius: 3px;
+}
+
+@media (max-width: 37.5em) {
+  .proj_btn-back__style {
+    padding: 1rem 3rem 1rem 3rem;
+  }
 }
 
 .proj_btn-back__style span {

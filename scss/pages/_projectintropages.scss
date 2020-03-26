@@ -17,6 +17,7 @@
        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
        justify-content: center;
        padding: 4rem;
+       padding-left: 0;
     }
     
   
@@ -57,7 +58,7 @@
            
             line-height: 2.5rem;
         }
-        @include respond(phone){
+        @include respond(tab-land){
             
            
             @include phone-font-system;
@@ -80,12 +81,10 @@
         
       & img{
         background-color: white;
-          width: 80%;
+          width: 100%;
           height: auto;
          
       }
-
- 
 
 
     }
@@ -103,6 +102,9 @@
     @include respond(tab-land){
         padding-top: 7rem;
     }
+    @include respond(phone){
+       padding-right: 0rem;
+    }
    
     .button2{
         margin-left: 3rem;
@@ -110,10 +112,10 @@
     
     &__style{
         padding-right: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: white;
         background-image: linear-gradient(to right, #e43a15 0%, #e65245 51%, #e43a15 100%);
-        padding: 0.5rem 3rem 1rem 3rem;
+        padding: 0.5rem 2rem 1rem 2rem;
         display: inline-block;
         text-decoration: none;
         -webkit-transition: all .1s;
@@ -177,7 +179,7 @@
 
     @include respond(phone){
         
-        padding: 6rem;
+        padding: 4rem;
     }
 
     & h2{
@@ -257,7 +259,7 @@
             margin-bottom: 2rem;
             border-left: 3px solid #EF3F49;
             
-            @include respond (phone){
+            @include respond (tab-land){
             
                 @include phone-font-system;
     
@@ -274,13 +276,17 @@
 .proj_btn-back{
 
     padding-top: 5rem;
+
+    @include respond(phone){
+        text-align: center;
+    }
 }
 .proj_btn-back__style{
 
 
-
+    
     padding-right: 2rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: white;
         background-image: linear-gradient(to right, #e43a15 0%, #e65245 51%, #e43a15 100%);
         padding: 0.5rem 3rem 1rem 3rem;
@@ -289,6 +295,10 @@
         -webkit-transition: all .1s;
         transition: all .1s;
         border-radius: 3px;
+
+        @include respond(phone){
+            padding: 1rem 3rem 1rem 3rem;
+        }
 
         & span{
 
