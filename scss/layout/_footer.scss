@@ -3,7 +3,7 @@
 
     
     background-color: #212121;
-    padding: 0.5rem 23rem;
+    padding: 0.5rem 15rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -48,7 +48,7 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    gap: 0rem;
     list-style: none;
 
 

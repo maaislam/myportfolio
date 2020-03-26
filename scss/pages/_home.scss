@@ -126,7 +126,7 @@
 
 .section__mywork{
     
-
+    
     background-color:#f1f4f8;
     @include primary-padding;
         @include respond(tab-port){
@@ -161,7 +161,7 @@
 
    & p{
        padding-top: 3rem;
-
+      
 
        @include respond(tab-port){
             
@@ -198,6 +198,31 @@
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));    
             
         }
+
+    & a{
+        text-decoration: none;
+        transition: all 0.2s ease 0s;
+        &:hover{
+
+            -webkit-transform: translateY(-.5rem);
+
+            transform: translateY(-.5rem);
+
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+
+             
+        }
+        &:active{
+
+            -webkit-transform: translateY(-.1rem);
+        
+                    transform: translateY(-.1rem);
+        
+                    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+        }
+
+        
+    }
  
     & img{
       
@@ -209,6 +234,8 @@
     }
 
     & p{
+       
+        
         font-size: 1.2rem;
         line-height: 2rem;
         text-align: center;
@@ -249,21 +276,29 @@
       
         padding-top: 2rem;
         background-color: white;
-        box-shadow:
-            0 3.7px 1px rgba(0, 0, 0, 0.07),
-            0 6.9px 3.3px rgba(0, 0, 0, 0.062),
-            0 9.6px 8.2px rgba(0, 0, 0, 0.055),
-            0 12.4px 18.6px rgba(0, 0, 0, 0.049),
-            0 15.4px 39.4px rgba(0, 0, 0, 0.043),
-            0 19.1px 62.5px rgba(0, 0, 0, 0.037),
-            0 24px 80px rgba(0, 0, 0, 0.027);
+            box-shadow:
+                0 3.7px 1px rgba(0, 0, 0, 0.07),
+                0 6.9px 3.3px rgba(0, 0, 0, 0.062),
+                0 9.6px 8.2px rgba(0, 0, 0, 0.055),
+                0 12.4px 18.6px rgba(0, 0, 0, 0.049),
+                0 15.4px 39.4px rgba(0, 0, 0, 0.043),
+                0 19.1px 62.5px rgba(0, 0, 0, 0.037),
+                0 24px 80px rgba(0, 0, 0, 0.027);
+        padding-top: 2rem ;
+        transition: all 0.5s ease 0s;
+
+            
+           
+
+           
+    
      
     
     & p, ul{
-    
+        color: black;
         padding-bottom: 2rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         
         }
     }
