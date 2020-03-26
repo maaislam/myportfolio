@@ -1122,6 +1122,12 @@ h4 p {
   list-style: none;
 }
 
+@media (max-width: 75em) {
+  .footer__list {
+    gap: 1.5rem;
+  }
+}
+
 .footer__list a {
   font-size: 1.4rem;
   text-decoration: none;

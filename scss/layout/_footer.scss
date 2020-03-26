@@ -50,7 +50,10 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0rem;
     list-style: none;
+        @include respond(tab-land){
 
+            gap: 1.5rem;
+        }
 
     & a{
 

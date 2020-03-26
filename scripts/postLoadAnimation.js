@@ -1761,6 +1761,12 @@ $(document).ready(function(){
 
 
 
+/*********Code for smooth scrolling*******/
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 600,
+    easing: 'easeInOutCubic'
+});
 
 	
 
@@ -1783,12 +1789,6 @@ AOS.init({
 
 
 
-/*********Code for smooth scrolling*******/
-
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 600,
-    easing: 'easeInOutCubic'
-});
 
 
 
