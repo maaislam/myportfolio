@@ -1896,31 +1896,28 @@ h4 p {
   padding: 15rem 23rem;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 75em) {
   .overview {
-    padding: 8rem 12rem;
+    padding: 8rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .overview {
+    overflow: hidden;
     -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1rem;
-    padding: 5rem 3rem;
-  }
-}
-
-@media (max-width: 50em) {
-  .overview__text {
-    text-align: center;
-    padding: 3rem 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 4rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .overview__text {
-    padding: 3rem;
+    padding-left: 4rem;
+    text-align: left;
   }
 }
 
@@ -1930,28 +1927,9 @@ h4 p {
   z-index: 1;
 }
 
-@media (max-width: 50em) {
-  .overview__text > * {
-    text-align: center;
-    padding: 3rem 2rem;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .overview__text > * {
-    padding: 3rem 0;
-  }
-}
-
 .overview__text h2 {
   border-bottom: 1px solid #EF3F49;
   padding-bottom: 2rem;
-}
-
-@media (max-width: 37.5em) {
-  .overview__text h2 {
-    font-size: 3rem;
-  }
 }
 
 .overview__text p {
@@ -1972,23 +1950,16 @@ h4 p {
   }
 }
 
+@media (max-width: 37.5em) {
+  .overview__image {
+    margin-left: 4rem;
+  }
+}
+
 .overview__image img {
   background-color: white;
   width: 80%;
   height: auto;
-}
-
-@media (max-width: 50em) {
-  .overview__image {
-    width: 90%;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .overview__image {
-    width: 90%;
-    padding-left: 6rem;
-  }
 }
 
 .proj_btn {
@@ -1999,6 +1970,12 @@ h4 p {
       flex-wrap: nowrap;
   padding: 2rem;
   padding-left: 0;
+}
+
+@media (max-width: 75em) {
+  .proj_btn {
+    padding-top: 7rem;
+  }
 }
 
 .proj_btn .button2 {
@@ -2017,6 +1994,12 @@ h4 p {
   -webkit-transition: all .1s;
   transition: all .1s;
   border-radius: 3px;
+}
+
+@media (max-width: 37.5em) {
+  .proj_btn__style {
+    font-size: 1.8rem;
+  }
 }
 
 .proj_btn__style span {
@@ -2048,7 +2031,20 @@ h4 p {
 
 /********************Technology used section**************************/
 .tech-used {
+  overflow: hidden;
   padding: 10rem 23rem;
+}
+
+@media (max-width: 75em) {
+  .tech-used {
+    padding: 8rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .tech-used {
+    padding: 6rem;
+  }
 }
 
 .tech-used h2 {
@@ -2060,6 +2056,7 @@ h4 p {
 
 @media (max-width: 37.5em) {
   .tech-used h2 {
+    text-align: left;
     font-size: 3rem;
   }
 }
@@ -2074,6 +2071,15 @@ h4 p {
           justify-content: space-between;
 }
 
+@media (max-width: 75em) {
+  .tech-used__image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .tech-used__image img {
   width: 100%;
   height: auto;
@@ -2081,8 +2087,33 @@ h4 p {
           box-shadow: 0 3.7px 1px rgba(0, 0, 0, 0.07), 0 6.9px 3.3px rgba(0, 0, 0, 0.062), 0 9.6px 8.2px rgba(0, 0, 0, 0.055), 0 12.4px 18.6px rgba(0, 0, 0, 0.049), 0 15.4px 39.4px rgba(0, 0, 0, 0.043), 0 19.1px 62.5px rgba(0, 0, 0, 0.037), 0 24px 80px rgba(0, 0, 0, 0.027);
 }
 
+@media (max-width: 75em) {
+  .tech-used__image img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .tech-used__image img {
+    width: 110%;
+  }
+}
+
 .tech-used__image .list {
   padding-left: 5rem;
+}
+
+@media (max-width: 75em) {
+  .tech-used__image .list {
+    padding-top: 5rem;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .tech-used__image .list {
+    margin-right: -7rem;
+  }
 }
 
 .tech-used__image ul {
@@ -2092,6 +2123,13 @@ h4 p {
   padding-left: 5rem;
   margin-bottom: 2rem;
   border-left: 3px solid #EF3F49;
+}
+
+@media (max-width: 37.5em) {
+  .tech-used__image ul {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 .comment {
@@ -2105,7 +2143,7 @@ h4 p {
 
 .proj_btn-back__style {
   padding-right: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#e43a15), color-stop(51%, #e65245), to(#e43a15));
   background-image: linear-gradient(to right, #e43a15 0%, #e65245 51%, #e43a15 100%);
