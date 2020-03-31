@@ -160,7 +160,7 @@
     }
 
    & p{
-       padding-top: 3rem;
+       padding-top: 2rem;
       
 
        @include respond(tab-port){
@@ -202,7 +202,7 @@
     & a{
         text-decoration: none;
         transition: all 0.2s ease 0s;
-        &:hover{
+        &:nth-child(3):hover{
 
             -webkit-transform: translateY(-.5rem);
 
@@ -212,7 +212,7 @@
 
              
         }
-        &:active{
+        &:nth-child(3):active{
 
             -webkit-transform: translateY(-.1rem);
         
@@ -229,9 +229,14 @@
         padding-right: 2rem;
         padding-left: 2rem;
         width: 100%;
-        height: auto;
+        
+       
 
     }
+
+    
+
+
 
     & p{
        
@@ -284,12 +289,12 @@
                 0 15.4px 39.4px rgba(0, 0, 0, 0.043),
                 0 19.1px 62.5px rgba(0, 0, 0, 0.037),
                 0 24px 80px rgba(0, 0, 0, 0.027);
-        padding-top: 2rem ;
+     
         transition: all 0.5s ease 0s;
 
             
            
-
+        
            
     
      
