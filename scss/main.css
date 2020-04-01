@@ -1467,7 +1467,7 @@ h4 p {
 }
 
 .section__mywork-text {
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 
 @media (max-width: 50em) {
@@ -1514,7 +1514,7 @@ h4 p {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
-  padding-top: 1.5rem;
+  padding-top: 1.0rem;
 }
 
 @media (max-width: 75em) {
@@ -1555,12 +1555,15 @@ h4 p {
   padding-right: 2rem;
   padding-left: 2rem;
   width: 100%;
+  height: auto;
 }
 
 .mywork p {
+  border-top: 1px solid rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   font-size: 1.2rem;
   line-height: 2rem;
-  text-align: center;
+  text-align: justify;
 }
 
 @media (max-width: 50em) {
@@ -1634,7 +1637,7 @@ h4 p {
 }
 
 .section__myskill-text {
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 
 @media (max-width: 50em) {
@@ -1813,7 +1816,7 @@ h4 p {
 }
 
 .section__features-text {
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 
 @media (max-width: 50em) {
@@ -1955,7 +1958,7 @@ h4 p {
 .overview__text h2 {
   border-bottom: 1px solid #EF3F49;
   padding-bottom: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 37.5em) {
@@ -1965,6 +1968,7 @@ h4 p {
 }
 
 .overview__text p {
+  text-align: justify;
   font-size: 1.5rem;
   padding-top: 2rem;
 }
@@ -2001,6 +2005,12 @@ h4 p {
   background-color: white;
   width: 70%;
   height: auto;
+}
+
+@media (max-width: 37.5em) {
+  .overview__image img {
+    width: 90%;
+  }
 }
 
 .proj_btn {
@@ -2064,8 +2074,8 @@ h4 p {
 }
 
 .proj_btn__style:hover span {
-  -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
+  -webkit-transform: translateX(0.7rem) scale(1.1);
+          transform: translateX(0.7rem) scale(1.1);
   font-weight: 600;
 }
 
@@ -2229,8 +2239,8 @@ h4 p {
 }
 
 .proj_btn-back__style:hover span {
-  -webkit-transform: translateX(-1rem);
-          transform: translateX(-1rem);
+  -webkit-transform: translateX(-1rem) scale(1.1);
+          transform: translateX(-1rem) scale(1.1);
   font-weight: 600;
 }
 

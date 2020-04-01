@@ -23,6 +23,8 @@
   
     &__text{
 
+       
+
        @include respond (phone){
         
         text-align: left;
@@ -42,9 +44,10 @@
     }
 
     &__text h2{
+       
         border-bottom: 1px solid #EF3F49;
         padding-bottom: 2rem;
-        text-align: center;
+        text-align: left;
         //margin-right: 30rem;
         @include respond(phone){
             font-size:3rem ;
@@ -55,6 +58,7 @@
 
 
     &__text p{
+        text-align: justify;
         font-size: 1.5rem;
         padding-top: 2rem;
         @include respond(tab-port){
@@ -91,7 +95,12 @@
         background-color: white;
           width: 70%;
           height: auto;
-          
+          @include respond(phone){
+            
+            width: 90%;
+           
+            
+        }
           
       }
 
@@ -135,7 +144,7 @@
         }
 
         & span{
-
+            
             font-size: 1.8rem; 
             -webkit-transition: all .1s;
             transition: all .1s;
@@ -146,14 +155,15 @@
 
             -webkit-transform: translateY(-.3rem);
 
-            transform: translateY(-.3rem);
+            transform: translateY(-.3rem) ;
+
 
             box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 
             & span{
                
 
-                transform: translateX(1rem);
+                transform: translateX(0.7rem) scale(1.1);
                 font-weight: 600;
             }
 
@@ -328,7 +338,7 @@
             & span{
                
 
-                transform: translateX(-1rem);
+                transform: translateX(-1rem) scale(1.1);
                 font-weight: 600;
             }
 
