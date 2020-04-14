@@ -2237,7 +2237,9 @@ h4 p {
 }
 
 .tech-used__image img {
-  width: 50%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 80%;
   height: auto;
   -webkit-box-shadow: 0 3.7px 1px rgba(0, 0, 0, 0.07), 0 6.9px 3.3px rgba(0, 0, 0, 0.062), 0 9.6px 8.2px rgba(0, 0, 0, 0.055), 0 12.4px 18.6px rgba(0, 0, 0, 0.049), 0 15.4px 39.4px rgba(0, 0, 0, 0.043), 0 19.1px 62.5px rgba(0, 0, 0, 0.037), 0 24px 80px rgba(0, 0, 0, 0.027);
           box-shadow: 0 3.7px 1px rgba(0, 0, 0, 0.07), 0 6.9px 3.3px rgba(0, 0, 0, 0.062), 0 9.6px 8.2px rgba(0, 0, 0, 0.055), 0 12.4px 18.6px rgba(0, 0, 0, 0.049), 0 15.4px 39.4px rgba(0, 0, 0, 0.043), 0 19.1px 62.5px rgba(0, 0, 0, 0.037), 0 24px 80px rgba(0, 0, 0, 0.027);

@@ -15,6 +15,12 @@
 
 
 
+        window.addEventListener('load', function(){
+
+        const pageLoader = document.querySelector('.page-loader');
+        pageLoader.classList.add('preload-finish');
+        });
+    
 	
 	
 	
