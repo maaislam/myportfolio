@@ -434,7 +434,7 @@ h4 p {
 .page-loader {
   background: #7e7285;
   text-align: center;
-  z-index: 1000;
+  z-index: 1500;
   width: 100vw;
   height: 100vh;
   position: fixed;
