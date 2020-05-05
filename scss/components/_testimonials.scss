@@ -5,7 +5,8 @@
     
    
     
-    padding: 8rem 30rem;
+    padding: 10rem 22rem;
+    
         @include respond(tab-land){padding: 5rem 12rem;}
         @include respond(phone){padding: 5rem 6rem;}
             
@@ -73,7 +74,14 @@
                 & img{
                     transform: scale(1.8) translateX(60px);
                     width: 100%;
+                    height: auto;
                     @include respond(tab-land){
+                        transform: scale(1.4);
+                      }
+                    @include respond(tab-port){
+                        transform: scale(1.0);
+                      }
+                    @include respond(phone){
                         transform: scale(1.4);
                       }
                 }
@@ -94,7 +102,7 @@
                 flex: 1 1 auto;
 
                 padding-left: 3rem;
-                padding-top: 5rem;
+                padding-top: 3rem;
 
                 @include respond(tab-land){
                  
@@ -104,7 +112,7 @@
                    
                             @include respond(tab-port){
                                 
-                               padding-top: 7rem;
+                               padding-top: 2rem;
                                 align-items: center;
                                 padding-left: 5rem;
                                 padding-right: 5rem;
@@ -112,8 +120,9 @@
 
                                         
                    @include respond(phone){
-                    padding-left: 2rem;
-                    padding-right: 2rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 5rem;
                     
                         
                    }
@@ -129,9 +138,9 @@
                     color: black;
                     //margin-right: 45rem;
                     
-                    text-align: justify;
-                    padding-bottom: 6rem;
-                    padding-top: 5rem;
+                    text-align: center;
+                    padding-bottom: 3rem;
+                    padding-top: 3rem;
                         & span{
                             
                             font-size:2.5rem;
@@ -168,13 +177,13 @@
                     padding-top: 0rem;
                     width: 40%;
                     text-align: center;
-                    font-size: 1.0rem;
-                    padding-bottom: 6rem;
+                    font-size: 1.2rem;
+                    padding-bottom: 3rem;
                     @include respond(tab-land){
                         padding-bottom: 4rem;
                       }
                     @include respond(tab-port){
-                        padding-bottom: 5rem;
+                        padding-bottom: 4rem;
                         font-size: 1.5rem;
                     }
 
@@ -200,10 +209,7 @@
                         width: 50%;
                     }
 
-                    @include respond(phone){
-                        
-                       
-                    }
+                   
                     
                 }
             
@@ -213,4 +219,18 @@
     }
 
 
-    
+    /*patch*/
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        @include respond(phone){
+                        
+            top: 39% !important;      
+        }
+        
+    }
+
+figure img .ahead-social{
+
+    transform: scale(2);
+}

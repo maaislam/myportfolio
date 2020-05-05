@@ -855,7 +855,7 @@ h4 p {
 }
 
 .section__testimonials {
-  padding: 8rem 30rem;
+  padding: 10rem 22rem;
 }
 
 @media (max-width: 75em) {
@@ -937,9 +937,24 @@ h4 p {
   -webkit-transform: scale(1.8) translateX(60px);
           transform: scale(1.8) translateX(60px);
   width: 100%;
+  height: auto;
 }
 
 @media (max-width: 75em) {
+  .section__testimonials-container .user-image img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@media (max-width: 50em) {
+  .section__testimonials-container .user-image img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (max-width: 37.5em) {
   .section__testimonials-container .user-image img {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
@@ -965,7 +980,7 @@ h4 p {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding-left: 3rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 @media (max-width: 75em) {
@@ -977,7 +992,7 @@ h4 p {
 
 @media (max-width: 50em) {
   .section__testimonials-container .section__testimonials-container-reviews figure {
-    padding-top: 7rem;
+    padding-top: 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -988,8 +1003,9 @@ h4 p {
 
 @media (max-width: 37.5em) {
   .section__testimonials-container .section__testimonials-container-reviews figure {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
   }
 }
 
@@ -1000,9 +1016,9 @@ h4 p {
   line-height: 2rem;
   letter-spacing: 1px;
   color: black;
-  text-align: justify;
-  padding-bottom: 6rem;
-  padding-top: 5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .section__testimonials-container blockquote span {
@@ -1041,8 +1057,8 @@ h4 p {
   padding-top: 0rem;
   width: 40%;
   text-align: center;
-  font-size: 1.0rem;
-  padding-bottom: 6rem;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
 }
 
 @media (max-width: 75em) {
@@ -1053,7 +1069,7 @@ h4 p {
 
 @media (max-width: 50em) {
   .section__testimonials figcaption {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     font-size: 1.5rem;
   }
 }
@@ -1085,6 +1101,19 @@ h4 p {
             transform: translateX(0);
     width: 50%;
   }
+}
+
+/*patch*/
+@media (max-width: 37.5em) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 39% !important;
+  }
+}
+
+figure img .ahead-social {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .header__landing {
