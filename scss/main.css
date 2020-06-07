@@ -1888,30 +1888,36 @@ figure img .ahead-social {
 }
 
 .myskill__card:nth-child(4) i {
+  padding: 1.5rem 1.7rem;
+  font-size: 3.5rem;
+  background-color: #00d8ff;
+}
+
+.myskill__card:nth-child(5) i {
   padding: 1.7rem 1.4rem;
   font-size: 3.5rem;
   background-color: #cd669a;
 }
 
-.myskill__card:nth-child(5) i {
+.myskill__card:nth-child(6) i {
   padding: 1.8rem 2.2rem;
   font-size: 3.5rem;
   background-color: #0868ac;
 }
 
-.myskill__card:nth-child(6) i {
+.myskill__card:nth-child(7) i {
   padding: 1.7rem 2rem;
   font-size: 3.5rem;
   background-color: #563d7c;
 }
 
-.myskill__card:nth-child(7) i {
+.myskill__card:nth-child(8) i {
   padding: 2rem 2rem;
   font-size: 3.5rem;
   background-color: #464646;
 }
 
-.myskill__card:nth-child(8) i {
+.myskill__card:nth-child(9) i {
   padding: 2rem 2rem;
   font-size: 3.5rem;
   background-color: #333333;
