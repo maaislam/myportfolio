@@ -203,7 +203,7 @@
     & a{
         text-decoration: none;
         transition: all 0.2s ease 0s;
-        &:nth-child(3):hover{
+        &:hover{
 
             -webkit-transform: translateY(-.5rem);
 
@@ -213,7 +213,7 @@
 
              
         }
-        &:nth-child(3):active{
+        &:active{
 
             -webkit-transform: translateY(-.1rem);
         
