@@ -1,0 +1,23 @@
+/*Creating Overlay on hover*/
+
+
+.mywork__card{
+
+    position: relative;
+}
+
+.project-image-overlay{
+
+
+
+  background: rgba(0, 0, 0, 0.692) url('/images/eye-regular.svg') center center no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.project-image-overlay:hover {
+    opacity: 1;
+  }
