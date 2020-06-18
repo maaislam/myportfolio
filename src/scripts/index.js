@@ -1,6 +1,7 @@
 
 
 import '../scss/main.scss';
+import '../images/fontawesome-free-5.12.1-web/css/all.css';
 import './headerAnim';
 
 import Typed from 'typed.js';

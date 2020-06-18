@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     entry: {
@@ -15,17 +15,32 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: ''
     },
+    
     module: {
         rules: [
             
             {
                 test: /\.css$/,
-                use:['style-loader', 'css-loader?url=false']
+                use:['style-loader', 'css-loader?url=false',   
+                {
+                    loader: 'postcss-loader',
+                    options: {
+                      plugins: () => [autoprefixer()]
+                    }
+                },
+                ]
                 
             },
             {
                 test: /\.scss$/,
-                use:[MiniCssExtractPlugin.loader, 'css-loader?url=false', 'sass-loader']
+                use:[MiniCssExtractPlugin.loader, 'css-loader?url=false',  
+                {
+                    loader: 'postcss-loader',
+                    options: {
+                      plugins: () => [autoprefixer()]
+                    }
+                },  'sass-loader'
+                ]
                 
             },
             {
