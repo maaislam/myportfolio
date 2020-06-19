@@ -125,19 +125,22 @@
 /*Style for My work Section/ section 2*/
 
 .section__mywork{
-    
-    
+   
+    position: relative;
     background-color:#f1f4f8;
     @include primary-padding;
         @include respond(tab-port){
                 
             @include primary-tab-padding;
+            padding-left: 3rem;
+            padding-right: 3rem;
         }
         @include respond(phone){
                 
-            padding: 5rem 7rem 5rem 7rem;
+            padding: 5rem 2rem 5rem 2rem;
         }
     &-text{
+        padding-top: 1.5rem;
         padding-bottom: 6rem;
         @include respond(tab-port){
                 
@@ -150,6 +153,7 @@
         display: inline;
         color:black;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+       
         padding-bottom: 1.5rem;
         
         @include respond(tab-port){
@@ -183,19 +187,54 @@
 
 .mywork{
     
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    overflow-x: scroll;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
     padding-top: 1.0rem;
     
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    
+    .swiper-button-prev{
+        margin-left: 22rem;
+       
+    }
+    .swiper-button-next{
+        margin-right: 22rem;
+       
+    }
     
         @include respond(tab-land){
-            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));    
+           
+            .swiper-button-prev{
+               
+                margin-left:1rem;
+                padding-top: 10rem;
+            }
+            .swiper-button-next{
+              
+                margin-right:1rem;
+                padding-top: 10rem;
+            }
             
         }
        
         @include respond(phone){
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));    
+           
+            .swiper-button-prev{
+               
+                margin-left:1rem;
+                padding-top: 20rem;
+            }
+            .swiper-button-next{
+              
+                margin-right:1rem;
+                padding-top: 20rem;
+            }
             
         }
 
@@ -319,7 +358,7 @@
     /*Style for my skills section*/
 
     .section__myskill {
-        
+       
     background-color:#f1f4f8;
     @include primary-padding;
         
@@ -333,7 +372,7 @@
             }
     &-text{
         padding-bottom: 6rem;
-        
+        padding-top: 1.5rem;
         @include respond(tab-port){
                 
             padding-bottom: 5rem;
@@ -513,6 +552,7 @@
 
     background-color:white;
     @include primary-padding;
+    padding-top: 12rem;
        
         @include respond(tab-port){
                 
@@ -524,7 +564,7 @@
             }
     &-text{
         padding-bottom: 6rem;
-        
+        padding-top: 1.5rem;
         @include respond(tab-port){
                 
             padding-bottom: 5rem;

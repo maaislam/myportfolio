@@ -1,7 +1,7 @@
    /*Simple Contact Form*/
 
    .contact-form{
-
+    
     background-image: url(/images/wave.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,6 +12,7 @@
     //flex-wrap: nowrap;
     width: 100%;
     @include primary-padding;
+    padding-top: 14rem;
     justify-content: space-between;
     
         @include respond(tab-land){
@@ -27,7 +28,7 @@
   
 
     &__text{
-
+        padding-top: 1.5rem;
        & h2{
         display: inline;
         color:black;

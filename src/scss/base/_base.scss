@@ -9,8 +9,10 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
   font-size: 62.5%;
   /* 1 rem = 10px but browser default size is 16 px so 10/16 = 62.5*/
+
 }
 
 @media (max-width: 75em) {
@@ -56,6 +58,19 @@ body {
   line-height: 1.7;
   color: #777777;
   padding: 0rem;
-
+  
   position: relative;
+}
+
+
+@-moz-document url-prefix() {
+  section, header, footer {
+  
+  scroll-snap-align: start;
+  @include respond(tab-land){
+    scroll-snap-type: y none;
+    scroll-snap-align: none;
+  }
+  
+  }
 }

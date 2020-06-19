@@ -76,3 +76,29 @@ var swiper1 = new Swiper('.swiper-container1', {
 });
 
 
+var swiper3 = new Swiper('.swiper-container3', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 2,
+    loop: false,
+    loopFillGroupWithBlank: false,
+   
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2
+      },
+      1024: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      }
+    }
+  });
