@@ -2,20 +2,6 @@
 import $ from 'jquery';
 
 export default $(document).ready(function(){
-	$('.nav__mobile').click(function(){
-		$(this).toggleClass('open');
-		//$('.nav__mobile-container').addClass('hide');
-		$('.nav__mobile-container').toggleClass('show, hide');
-	});
-
-	$( '.nav__mobile-aboutMe, .nav__mobile-projects,.nav__mobile-connectWithMe, .nav__mobile-testimonials, .nav__mobile-contact, .nav__mobile-resume').click(function () { 
-		
-		$('.nav__mobile-container').addClass('hide');
-		$('.nav__mobile').toggleClass('open');
-	
-		
-	});
-
 
 
 	$(function(){
@@ -34,5 +20,26 @@ export default $(document).ready(function(){
 			}
 		});
 	});
+
+
+
+
+
+	$('.nav__mobile').click(function(){
+		$(this).toggleClass('open');
+		//$('.nav__mobile-container').addClass('hide');
+		$('.nav__mobile-container').toggleClass('show, hide');
+	});
+
+	$( '.nav__mobile-aboutMe, .nav__mobile-projects,.nav__mobile-connectWithMe, .nav__mobile-testimonials, .nav__mobile-contact, .nav__mobile-resume').click(function () { 
+		
+		$('.nav__mobile-container').addClass('hide');
+		$('.nav__mobile').toggleClass('open');
+	
+		
+	});
+
+
+
 
 });

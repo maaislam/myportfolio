@@ -1,7 +1,9 @@
 
 
+
+
 import '../scss/main.scss';
-import '../images/fontawesome-free-5.12.1-web/css/all.css';
+
 import './headerAnim';
 
 import Typed from 'typed.js';
@@ -18,10 +20,15 @@ import 'sal.js/dist/sal.css';
 
 
 window.addEventListener('load', function(){
-
+    const navbar = document.querySelector('.nav')
     const pageLoader = document.querySelector('.page-loader');
     pageLoader.classList.add('preload-finish');
 
+
+
+        if (window.scrollY){
+            navbar.classList.add('nav-link')
+        }
   
     });
 

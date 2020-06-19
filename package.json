@@ -18,6 +18,10 @@
     "url": "https://github.com/maaislam/myportfolio/issues"
   },
   "homepage": "https://github.com/maaislam/myportfolio#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "autoprefixer": "^9.8.0",

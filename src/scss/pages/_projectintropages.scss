@@ -231,7 +231,7 @@
 
             padding-left: 2rem;
             padding-right: 2rem;
-            width: 80%;
+            max-width: 40%;
             height: auto;
 
             box-shadow:0 3.7px 1px rgba(0, 0, 0, 0.07),
@@ -243,12 +243,12 @@
         0 24px 80px rgba(0, 0, 0, 0.027) ;
 
             @include respond (tab-land){
-                width: 70%;
+               max-width: 70%;
                 
             }
             
             @include respond (phone){
-                width: 110%;
+                max-width: 100%;
                 
             }
             
