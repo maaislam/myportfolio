@@ -43,8 +43,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.10.3",
+    "aos": "^3.0.0-beta.6",
     "jquery": "^3.5.1",
-    "sal.js": "^0.7.6",
     "swiper": "^5.4.5",
     "typed.js": "^2.0.11"
   }

@@ -50,7 +50,7 @@ module.exports = {
                     loader: 'babel-loader',
                     
                     options: {
-                        presets: [ 'latest' ]
+                        presets: [ '@babel/env' ]
                     }
                 }
             }

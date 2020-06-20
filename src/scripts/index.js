@@ -11,15 +11,17 @@ import Typed from 'typed.js';
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 
-import sal from 'sal.js'
-import 'sal.js/dist/sal.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 
 window.addEventListener('load', function(){
+
+    
     const navbar = document.querySelector('.nav')
     const pageLoader = document.querySelector('.page-loader');
     pageLoader.classList.add('preload-finish');
@@ -28,16 +30,13 @@ window.addEventListener('load', function(){
 
         if (window.scrollY){
             navbar.classList.add('nav-link')
+            
         }
   
     });
 
-
-    sal({
-        threshold: 0.7,
-        once: false,
-      });
-
+    AOS.init();
+   
     
     
     /********code for typed.js config********/
@@ -102,3 +101,7 @@ var swiper3 = new Swiper('.swiper-container3', {
       }
     }
   });
+
+function newFunction() {
+  lineAnim();
+}
