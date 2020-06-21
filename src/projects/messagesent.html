@@ -15,5 +15,36 @@
         </div>
         <div class="mail-sent__image"><img src="../images/undraw_Mail_sent_qwwx.svg" alt=""></div>
     </div>
+
+    <script>
+
+            function showNotification(){
+
+                const notification = new Notification("Message Sent Confirmation from Phoenix Design",{
+
+                    body:'Your message to Phoenix Design has been sent successfully',
+                    icon:'../images/logo-1.svg'
+                });
+
+            }
+
+
+            if (Notification.permission==='granted'){
+                showNotification();
+            }else if (Notification.permission!=='denied'){
+                Notification.requestPermission().then(permission =>{
+                    if (permission==='granted'){
+                        showNotification()
+                    }
+                })
+            };
+
+
+
+    </script>
+
+
+
+
 </body>
 </html>
