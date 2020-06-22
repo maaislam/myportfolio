@@ -80,6 +80,11 @@
 @mixin primary-padding{
     padding: 8rem 23rem;
 }
+/*Padding for main container in tablet in landscape mode*/
+
+@mixin primary-tabland-padding{
+    padding: 8rem 5rem;
+}
 /*Padding for main container in tablet in potrait mode*/
 
 @mixin primary-tab-padding{

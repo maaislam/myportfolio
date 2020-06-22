@@ -35,7 +35,9 @@ window.addEventListener('load', function(){
   
     });
 
-    AOS.init();
+    AOS.init({
+      useClassNames: true
+    });
    
     
     

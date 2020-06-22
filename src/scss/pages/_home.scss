@@ -12,6 +12,13 @@
     background-position: bottom right;
     position: relative;
     overflow: hidden;
+
+    @include respond(tab-land){
+        @include primary-tabland-padding;
+       
+        justify-content: center;
+    }
+
     @include respond(tab-port){
         @include primary-tab-padding;
         padding-bottom: 35rem;
@@ -37,7 +44,8 @@
         }
                 @include respond(phone){
                     
-                    padding: 3rem;
+                    padding: 3rem 3rem 8rem 3rem;
+                   
                     
                 }
 
@@ -113,7 +121,7 @@
         position: relative;
         z-index: 1;
     }
-    &-image{
+    &-image{//more quick fixes
         position: relative;
         width: 100%;
         height: auto;
@@ -129,7 +137,7 @@
     &-image img{
       
         
-        width: 100%;
+        width: 250%;
 
         @include respond(tab-port){
             width: 200%;
@@ -151,6 +159,15 @@
     position: relative;
     background-color:#f1f4f8;
     @include primary-padding;
+
+
+        @include respond(tab-land){
+            @include primary-tabland-padding;
+        
+            
+        }
+
+
         @include respond(tab-port){
                 
             @include primary-tab-padding;
@@ -237,6 +254,8 @@
         margin-right: 22rem;
        
     }
+
+      
     
         @include respond(tab-land){
            
@@ -391,6 +410,12 @@
        
     background-color:#f1f4f8;
     @include primary-padding;
+        
+        @include respond(tab-land){
+           
+            padding: 10rem;
+    
+        }
         
         @include respond(tab-port){
                 
@@ -750,4 +775,130 @@
     position: absolute;
     width: 50%;
     z-index: 10;
+}
+
+
+/*Connect with me section svg animations*/
+
+.image-container{
+    position: relative;
+   
+
+}
+
+.svg-animates-img2{
+    position: absolute;
+    left: 20%;
+    @include respond(tab-port){
+        width: 100%;
+
+    }
+}
+
+.mail{
+
+    width: 20%;
+    top: 36%;
+    left: 26%;
+    z-index: 11;
+
+
+
+
+
+        @include respond(tab-land){
+            width: 23%;
+            left: 25%;
+            top: 29%;
+    
+        }
+    
+        @include respond(tab-port){
+            width: 30%;
+            left: 32%;
+            top: 18%;
+    
+        }
+        @include respond(phone){
+            width: 50%;
+            left: 32%;
+            top: 18%;
+    
+        }
+
+}
+
+.character2{
+    width: 30%;
+    z-index: 10;
+    @include respond(tab-port){
+        width: 50%;
+
+    }
+    @include respond(phone){
+        width: 100%;
+        top: 16%;
+        left: 0%;
+        z-index: 9;
+
+    }
+}
+
+.back-shadow2{
+    width: 30%;
+    z-index: 9;
+    @include respond(tab-port){
+        width: 50%;
+
+    }
+    @include respond(phone){
+        display: none;
+
+    }
+}   
+
+
+
+
+.mail-img-container{
+    z-index: 10;
+    @include respond(tab-port){
+        width: 50%;
+
+    }
+    @include respond(phone){
+        width: 70%;
+
+    }
+}
+
+.slide-out-bck-tl {
+	animation: slide-out-bck-tl 1.0s 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+
+.empty-plane{
+    width: 60%;
+    z-index: 15;
+    top: 37%;
+    left: -12%;
+    @include respond(tab-land){
+       top: 33%; 
+
+    }
+    @include respond(tab-port){
+        width: 70%;
+        top: 22%;
+        left: -10%;
+    }
+    @include respond(phone){
+        width: 100%;
+        top: 21%;
+        left: -25%;
+    }
+}
+
+.slide-in-left {
+	animation: slide-in-left 1s 2.5s both;
 }

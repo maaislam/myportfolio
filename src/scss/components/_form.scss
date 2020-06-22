@@ -14,8 +14,13 @@
     @include primary-padding;
     padding-top: 14rem;
     justify-content: space-between;
-    
+
         @include respond(tab-land){
+            @include primary-tabland-padding;
+    
+        }
+
+        @include respond(tab-port){
 
             padding: 8rem 20rem;
         }
@@ -28,7 +33,18 @@
   
 
     &__text{
-        padding-top: 1.5rem;
+        
+        
+        @include respond(tab-port){
+            padding-bottom: 30rem;
+    
+        }
+        @include respond(phone){
+            padding-bottom: 25rem;
+    
+        }
+
+
        & h2{
         
         color:black;
@@ -68,7 +84,7 @@
     }
 
     &__details{
-
+        padding-top: 6rem;
         position: relative;
     }
 }
