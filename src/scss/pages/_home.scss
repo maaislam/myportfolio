@@ -21,8 +21,10 @@
     @include respond(phone){
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 1rem;
-        //padding: 5rem 3rem;
-        padding-bottom: 35rem;
+        padding: 5rem 3rem;
+        padding-bottom: 35rem;//quick fix
+       
+      
         
     }
 
@@ -112,10 +114,16 @@
         z-index: 1;
     }
     &-image{
+        position: relative;
         width: 100%;
         height: auto;
         margin-top: -10rem;
-       
+        padding-top: 5rem;
+        margin-left: -4rem;
+        
+        @include respond(tab-port){
+            margin-top: -15rem;
+        }
     }
 
     &-image img{
@@ -124,10 +132,10 @@
         width: 100%;
 
         @include respond(tab-port){
-            width: 140%;
+            width: 200%;
         }
         @include respond(phone){
-            width: 200%;
+            width: 250%;
             padding-right: 5rem;
             
         }
@@ -712,7 +720,7 @@
 
 
 
-/*svg animation section 2 about me*/
+/*svg animation section 1 about me*/
 
 
 .screen{
