@@ -109,6 +109,12 @@ module.exports = {
             template:'./src/projects/messagesent.html',
             chunks:['main']
         }),
+        new HtmlWebpackPlugin({
+            
+            filename:'./projects/project7.html',
+            template:'./src/projects/project7.html',
+            chunks:['main']
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {

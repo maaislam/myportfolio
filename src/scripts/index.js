@@ -23,7 +23,7 @@ window.addEventListener('load', function(){
 
     
     const navbar = document.querySelector('.nav')
-    const pageLoader = document.querySelector('.page-loader');
+   const pageLoader = document.querySelector('.page-loader');
     pageLoader.classList.add('preload-finish');
 
 
@@ -104,6 +104,7 @@ var swiper3 = new Swiper('.swiper-container3', {
     }
   });
 
-function newFunction() {
-  lineAnim();
-}
+
+  
+
+
