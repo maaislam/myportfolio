@@ -17,16 +17,17 @@
 
         @include respond(tab-land){
             @include primary-tabland-padding;
+
     
         }
 
         @include respond(tab-port){
 
-            padding: 8rem 20rem;
+            padding: 8rem 15rem;
         }
                 @include respond(phone){
 
-                    padding: 8rem 6rem;
+                    padding: 8rem 2rem;
                 }
 
         
@@ -34,6 +35,12 @@
 
     &__text{
         
+        
+        @include respond(tab-land){
+            padding-left: 5rem;
+            padding-right: 5rem; 
+    
+        }
         
         @include respond(tab-port){
             padding-bottom: 30rem;

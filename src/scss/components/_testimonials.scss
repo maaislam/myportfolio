@@ -2,13 +2,23 @@
 
 .section__testimonials{
    
-    
+    position: relative;
    
+    padding: 10rem 25rem;
     
-    padding: 10rem 22rem;
+
+        @media only screen and (min-width: 1280px){
+
+            padding: 10rem;
+            margin: 0 7rem ;
+        }
     
-        @include respond(tab-land){padding: 5rem 12rem;}
-        @include respond(phone){padding: 5rem 6rem;}
+        @include respond(tab-land){padding: 6rem;}
+        @include respond(tab-port){padding: 5rem 12rem;}
+        @include respond(phone){
+            padding: 5rem 0rem;
+            margin: 0 5rem;
+        }
             
             &-text{
                 padding-top: 1.5rem;
@@ -21,7 +31,7 @@
                 color:black;
                // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
                 padding-bottom: 1.5rem;
-                text-align: center;
+               
                
             }
             & hr{
@@ -33,7 +43,7 @@
 
         & p{
             padding-top: 2rem;
-            text-align: center;
+            //text-align: center;
 
             @include respond(tab-port){
                     font-size: 2rem;
@@ -54,9 +64,9 @@
         &-container{
             
             width: 100%;
-            height: auto;
+           
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 1rem;
             box-shadow:
             0 0px 26.9px -18px rgba(0, 0, 0, 0.049),
@@ -68,10 +78,12 @@
                             
             @media only screen and (min-width: 1280px){
 
-               width: 110%;
+              
 
             }
-
+            @include respond(tab-land){
+                width: 100%;
+            } 
             .user-image{
                 
                 z-index: 10;
@@ -100,7 +112,7 @@
                   
 
                     @include respond(tab-land){
-                        transform: scale(1.4);
+                        transform: scale(1.7);
                       }
                     @include respond(tab-port){
                         transform: scale(1.0);
@@ -130,7 +142,7 @@
 
                 @include respond(tab-land){
                  
-                    padding-top: 2rem;
+                padding-top: 2rem;
                   padding-left: 2rem;
                 }
                    
