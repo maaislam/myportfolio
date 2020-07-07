@@ -14,8 +14,6 @@
                 padding-top: 1.5rem;
                 padding-bottom: 8rem;
 
-               
-
             }
 
             & h2{
@@ -56,7 +54,7 @@
         &-container{
             
             width: 100%;
-         
+            height: auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 1rem;
@@ -68,11 +66,22 @@
             0 2.2px 42.2px -18px rgba(0, 0, 0, 0.175),
             0 31px 80px -18px rgba(0, 0, 0, 0.32);
                             
+            @media only screen and (min-width: 1280px){
+
+               width: 110%;
+
+            }
 
             .user-image{
                 
                 z-index: 10;
                 clip-path: circle(91.7% at 18% 39%);
+
+                @media only screen and (min-width: 1280px){
+
+                    clip-path: circle(89% at 18% 39%);
+
+                }
 
 
                         @include respond(tab-land){clip-path: circle(91.7% at 18% 39%);} 
@@ -82,6 +91,14 @@
                     transform: scale(1.8) translateX(60px);
                     width: 100%;
                     height: auto;
+
+                    @media only screen and (min-width: 1280px){
+
+                        
+    
+                    }
+                  
+
                     @include respond(tab-land){
                         transform: scale(1.4);
                       }

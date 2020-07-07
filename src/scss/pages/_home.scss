@@ -2,7 +2,7 @@
 .section__mysummary{
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 5rem;
     //@include primary-padding;
     padding: 15rem 23rem;
@@ -16,7 +16,7 @@
     @include respond(tab-land){
         @include primary-tabland-padding;
        
-        justify-content: center;
+        
     }
 
     @include respond(tab-port){
@@ -157,8 +157,15 @@
 .section__mywork{
    
     position: relative;
-    background-color:#f1f4f8;
+    background-color:#ECF1F6;
     @include primary-padding;
+
+
+        @media only screen and (min-width: 1280px){
+
+            padding-top: 10rem;
+
+        }
 
 
         @include respond(tab-land){
@@ -193,7 +200,6 @@
         color:black;
         //border-bottom: 1px solid rgba(0, 0, 0, 0.2);
        
-        padding-bottom: 2rem;
         
         @include respond(tab-port){
             
@@ -255,9 +261,24 @@
        
     }
 
-      
+    @media only screen and (min-width: 1280px){
+
+        margin: 0;
+        .swiper-button-prev{
+               
+            margin-left:18rem;
+            padding-top: 10rem;
+        }
+        .swiper-button-next{
+          
+            margin-right:18rem;
+            padding-top: 10rem;
+        }
+    }
     
         @include respond(tab-land){
+
+            
            
             .swiper-button-prev{
                
@@ -297,7 +318,7 @@
 
             transform: translateY(-.5rem);
 
-            box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+            //box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 
              
         }
@@ -336,7 +357,7 @@
         font-size: 1.2rem;
         line-height: 2rem;
        
-        text-align: justify;
+        //text-align: justify;
             @include respond(tab-port){
                 font-size: 1.8rem;
                 line-height: normal
@@ -374,27 +395,21 @@
         border-radius: 10px 10px 0px 0px; ;
         padding-top: 2rem;
         background-color: white;
-            box-shadow:
-                0 3.7px 1px rgba(0, 0, 0, 0.07),
-                0 6.9px 3.3px rgba(0, 0, 0, 0.062),
-                0 9.6px 8.2px rgba(0, 0, 0, 0.055),
-                0 12.4px 18.6px rgba(0, 0, 0, 0.049),
-                0 15.4px 39.4px rgba(0, 0, 0, 0.043),
-                0 19.1px 62.5px rgba(0, 0, 0, 0.037),
-                0 24px 80px rgba(0, 0, 0, 0.027);
+        box-shadow:
+            0 -0.7px 2.2px rgba(0, 0, 0, 0.04),
+            0 -2.5px 5.3px rgba(0, 0, 0, 0.031),
+            0 -2.7px 10px rgba(0, 0, 0, 0.025),
+            0 0.1px 17.9px rgba(0, 0, 0, 0.021),
+            0 8.8px 33.4px rgba(0, 0, 0, 0.019),
+            0 53px 80px rgba(0, 0, 0, 0.016);
      
         transition: all 0.5s ease 0s;
-
-            
-           
-        
-           
-    
      
     
     & p, ul{
         color: black;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
         
@@ -411,6 +426,13 @@
     background-color:#f1f4f8;
     @include primary-padding;
         
+
+        @media only screen and (min-width: 1280px){
+
+            padding-top: 10rem;
+
+        }
+
         @include respond(tab-land){
            
             padding: 10rem;
@@ -496,6 +518,11 @@
             line-height: normal;
             
         }
+
+
+      
+
+
     }
 
     .myskill__card{
