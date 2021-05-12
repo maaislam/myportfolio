@@ -46,7 +46,7 @@
     "@babel/preset-env": "^7.10.3",
     "aos": "^3.0.0-beta.6",
     "jquery": "^3.5.1",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "swup": "^2.0.10",
     "typed.js": "^2.0.11"
   }
